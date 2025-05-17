@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient(circle,rgba(211, 211, 211, 1) 0%, rgba(112, 128, 144, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} 
+.container{
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+header{
+    background-color: #6c7ae0;
+    padding: 20px;
+    color: white;
+}
+header h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.input-section{
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-section button{
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(74, 74, 231);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.todos-container{
+    padding: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.todo-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgba(233, 222, 222, 0.473);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.todo-content{
+    display: flex;
+    gap: 10px;
+}
+
+.todo-actions button{
+    color: rgb(74, 74, 231);
+    font-size: 18px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
